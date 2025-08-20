@@ -3,11 +3,28 @@
 <html>
 
 <head>
+	<title>Feedback Form</title>
 	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
+	<form method= "post">
+		<label for = "name">Name:</label>
+		<input type ="text" id="name" minlength="3" maxlength="50" required>
+		<br><br>
+
+		<label for="favColor">Favorite Color:</label>
+		<input type="color" id="faveColor" name="favColor" required>
+		<br><br>
+
+		<label for="likeness">Likeness (1-100):</label>
+		<input type="range" id="likeness" name="likeness" min="1" max="100"  required>
+		<br><br>
+
+		<button type="submit">Submit</button>
+	</form>
+			
     <script type="text/javascript" src="./script.js">
 </script>
 
